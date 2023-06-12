@@ -96,11 +96,7 @@
                                 <div class="col-md-6">
                                     <p><strong>Kategori: </strong>
                                         <span class="badge 
-                                        @if($berita->kategori == 'Sosial dan Kependudukan')
-                                        bg-danger text-white
-                                        @elseif($berita->kategori == 'Ekonomi dan Perdagangan')
-                                        bg-success text-white
-                                        @elseif($berita->kategori == 'Pertanian dan Pertambangan')
+                                        @if($berita->kategori == 'Pengumuman Rekrutmen)
                                         bg-warning text-white
                                         @elseif($berita->kategori == 'Pengumuman Resmi')
                                         bg-primary text-white

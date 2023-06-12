@@ -26,9 +26,7 @@
                         <label class="font-weight-bold">Kategori</label>
                         <select name="kategori" id="kategori" class="form-control" required>
                             <option value="">-- Pilih kategori kegiatan --</option>
-                            <option value="Sosial dan Kependudukan">Sosial dan Kependudukan</option>
-                            <option value="Ekonomi dan Perdagangan">Ekonomi dan Perdagangan</option>
-                            <option value="Pertanian dan Pertambangan">Pertanian dan Pertambangan</option>
+                            <option value="Pengumuman Rekrutmen">Pengumuman Rekrutmen</option>
                             <option value="Pengumuman Resmi">Pengumuman Resmi</option>
                             <option value="Lainnya">Lainnya</option>
                         </select>

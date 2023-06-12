@@ -35,12 +35,8 @@
                             <label class="font-weight-bold">Kategori</label>
                             <select name="kategori" id="kategori" class="form-control" required>
                                 <option value="">-- Pilih kategori kegiatan --</option>
-                                <option value="Sosial dan Kependudukan" {{ old('kategori', $berita->kategori) ===
-                                    'Sosial dan Kependudukan' ? 'selected' : '' }}>Sosial dan Kependudukan</option>
-                                <option value="Ekonomi dan Perdagangan" {{ old('kategori', $berita->kategori) ===
-                                    'Ekonomi dan Perdagangan' ? 'selected' : '' }}>Ekonomi dan Perdagangan</option>
-                                <option value="Pertanian dan Pertambangan" {{ old('kategori', $berita->kategori) ===
-                                    'Pertanian dan Pertambangan' ? 'selected' : '' }}>Pertanian dan Pertambangan
+                                <option value="Pengumuman Rekrutmen" {{ old('kategori', $berita->kategori) ===
+                                    'Pengumuman Rekrutmen' ? 'selected' : '' }}>Pengumuman Rekrutmen
                                 </option>
                                 <option value="Pengumuman Resmi" {{ old('kategori', $berita->kategori) === 'Pengumuman
                                     Resmi' ? 'selected' : '' }}>Pengumuman Resmi</option>
