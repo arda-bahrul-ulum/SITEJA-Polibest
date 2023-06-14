@@ -39,8 +39,8 @@
                                 @php
                                 $penilaian = App\Models\Management\DataPenilaian::where('id_pendaftaran',
                                 $pendaftaran->id)->first();
-                                $status = $penilaian ? 
-                                '<span class="badge bg-success text-white">Sudah Dinilai</span>' : 
+                                $status = $penilaian ?
+                                '<span class="badge bg-success text-white">Sudah Dinilai</span>' :
                                 '<span class="badge bg-danger text-white">Belum Dinilai</span>';
                                 @endphp
                                 {!! $status !!}
@@ -48,12 +48,13 @@
                             <td>
                                 @if(Auth::user()->level == 'admin' || Auth::user()->id == $pendaftaran->id_data_user)
                                 <div class="btn-group" role="group">
-                                    <a href="{{ route('pendaftaran.edit', $pendaftaran->id) }}"
-                                        class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom"
-                                        title="Edit Pendaftaran"><i class="fa fa-edit"></i></a>
                                     <a href="{{ route('pendaftaran.show', $pendaftaran->id) }}"
                                         class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="bottom"
                                         title="Detail Pendaftaran"><i class="fa fa-eye"></i></a>
+                                    @if(!$penilaian)
+                                    <a href="{{ route('pendaftaran.edit', $pendaftaran->id) }}"
+                                        class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom"
+                                        title="Edit Pendaftaran"><i class="fa fa-edit"></i></a>
                                     <form action="{{ route('pendaftaran.destroy', $pendaftaran->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
@@ -61,6 +62,7 @@
                                             data-placement="bottom" title="Hapus Pendaftaran"
                                             onclick="return confirm('Apakah Anda yakin ingin mengundurkan diri dari kegiatan ini?')">Mundur</button>
                                     </form>
+                                    @endif
                                 </div>
                                 @endif
                             </td>
