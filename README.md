@@ -40,6 +40,6 @@ Sistem Pendukung Keputusan Rekrutmen Tenaga Kerja Politeknik Bhakti Semesta Meng
 
 7. Login credentials
 
-**Email:** admin@example.com
+**Email:** admin@admin.com
 
-**Password:** password
+**Password:** 1337
