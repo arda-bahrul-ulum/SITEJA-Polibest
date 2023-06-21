@@ -53,9 +53,9 @@
                             </td>
                             <td>{{ $pendaftaran->kegiatan->nama }}</td>
                             <td>
-                                @if ($pendaftaran->kegiatan->jenis == 'Lapangan')
+                                @if ($pendaftaran->kegiatan->jenis == 'Pengajar')
                                 <span class="badge bg-success text-white">{{ $pendaftaran->kegiatan->jenis }}</span>
-                                @elseif ($pendaftaran->kegiatan->jenis == 'Pengolahan')
+                                @elseif ($pendaftaran->kegiatan->jenis == 'Manajemen')
                                 <span class="badge bg-primary text-white">{{ $pendaftaran->kegiatan->jenis }}</span>
                                 @endif
                             </td>

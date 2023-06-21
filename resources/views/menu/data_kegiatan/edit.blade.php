@@ -40,10 +40,10 @@
                             <label class="font-weight-bold">Jenis</label>
                             <select name="jenis" id="jenis" class="form-control" required>
                                 <option value="">-- Pilih Jenis --</option>
-                                <option value="Lapangan" {{ $kegiatan->jenis == 'Lapangan' ? 'selected' : '' }}>Lapangan
+                                <option value="Pengajar" {{ $kegiatan->jenis == 'Pengajar' ? 'selected' : '' }}>Pengajar
                                 </option>
-                                <option value="Pengolahan" {{ $kegiatan->jenis == 'Pengolahan' ? 'selected' : '' }}>
-                                    Pengolahan</option>
+                                <option value="Manajemen" {{ $kegiatan->jenis == 'Manajemen' ? 'selected' : '' }}>
+                                    Manajemen</option>
                             </select>
                         </div>
 

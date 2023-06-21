@@ -27,8 +27,8 @@
                         <label class="font-weight-bold">Jenis</label>
                         <select name="jenis" id="jenis" class="form-control" required>
                             <option value="">-- Pilih Jenis --</option>
-                            <option value="Lapangan">Lapangan</option>
-                            <option value="Pengolahan">Pengolahan</option>
+                            <option value="Pengajar">Pengajar</option>
+                            <option value="Manajemen">Manajemen</option>
                         </select>
                     </div>
 

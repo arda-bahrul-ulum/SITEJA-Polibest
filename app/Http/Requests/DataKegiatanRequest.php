@@ -25,8 +25,8 @@ class DataKegiatanRequest extends FormRequest
     {
         return [
             'nama' => 'required|string|max:255',
-            'jenis' => 'required|string|in:Lapangan,Pengolahan',
-            'level' => 'required|string|in:Umum,Provinsi,Kabupaten/Kota',
+            'jenis' => 'required|string|in:Pengajar,Manajemen',
+            'level' => 'required|string|in:Umum,Praktisi,Dosen',
             'gambar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'tanggal_mulai' => 'required|date',
             'tanggal_selesai' => 'required|date|after_or_equal:tanggal_mulai',

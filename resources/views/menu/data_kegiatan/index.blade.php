@@ -16,10 +16,10 @@
                         <h5 class="card-title text-center">{{ $kegiatan->nama }}</h5>
                         <p class="card-text text-center">
                             <strong>Jenis: </strong>
-                            @if ($kegiatan->jenis == 'Lapangan')
-                            <span class="badge bg-success text-white">Lapangan</span>
-                            @elseif ($kegiatan->jenis == 'Pengolahan')
-                            <span class="badge bg-primary text-white">Pengolahan</span>
+                            @if ($kegiatan->jenis == 'Pengajar')
+                            <span class="badge bg-success text-white">Pengajar</span>
+                            @elseif ($kegiatan->jenis == 'Manajemen')
+                            <span class="badge bg-primary text-white">Manajemen</span>
                             @else
                             {{ $kegiatan->jenis }}
                             @endif
@@ -110,10 +110,10 @@
                                 <div class="col-md-6">
                                     <div>
                                         <strong>Jenis:</strong>
-                                        @if ($kegiatan->jenis == 'Lapangan')
-                                        <span class="badge bg-success text-white">Lapangan</span>
-                                        @elseif ($kegiatan->jenis == 'Pengolahan')
-                                        <span class="badge bg-primary text-white">Pengolahan</span>
+                                        @if ($kegiatan->jenis == 'Pengajar')
+                                        <span class="badge bg-success text-white">Pengajar</span>
+                                        @elseif ($kegiatan->jenis == 'Manajemen')
+                                        <span class="badge bg-primary text-white">Manajemen</span>
                                         @else
                                         {{ $kegiatan->jenis }}
                                         @endif
