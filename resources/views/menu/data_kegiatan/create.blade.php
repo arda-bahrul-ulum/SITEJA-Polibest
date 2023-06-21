@@ -37,8 +37,8 @@
                         <select name="level" id="level" class="form-control" required>
                             <option value="">-- Pilih Level --</option>
                             <option value="Umum">Umum</option>
-                            <option value="Provinsi">Provinsi</option>
-                            <option value="Kabupaten/Kota">Kabupaten/Kota</option>
+                            <option value="Praktisi">Praktisi</option>
+                            <option value="Dosen">Dosen</option>
                         </select>
                     </div>
 

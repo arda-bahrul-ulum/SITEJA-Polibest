@@ -28,10 +28,10 @@
                             <strong>Level: </strong>
                             @if ($kegiatan->level == 'Umum')
                             <span class="badge bg-light text-success border border-success">Umum</span>
-                            @elseif ($kegiatan->level == 'Provinsi')
-                            <span class="badge bg-light text-primary border border-primary">Provinsi</span>
-                            @elseif ($kegiatan->level == 'Kabupaten/Kota')
-                            <span class="badge bg-light text-secondary border border-secondary">Kabupaten/Kota</span>
+                            @elseif ($kegiatan->level == 'Praktisi')
+                            <span class="badge bg-light text-primary border border-primary">Praktisi</span>
+                            @elseif ($kegiatan->level == 'Dosen')
+                            <span class="badge bg-light text-secondary border border-secondary">Dosen</span>
                             @else
                             {{ $kegiatan->level }}
                             @endif
@@ -128,11 +128,11 @@
                                         <strong>Level:</strong>
                                         @if ($kegiatan->level == 'Umum')
                                         <span class="badge bg-light text-success border border-success">Umum</span>
-                                        @elseif ($kegiatan->level == 'Provinsi')
-                                        <span class="badge bg-light text-primary border border-primary">Provinsi</span>
-                                        @elseif ($kegiatan->level == 'Kabupaten/Kota')
+                                        @elseif ($kegiatan->level == 'Praktisi')
+                                        <span class="badge bg-light text-primary border border-primary">Praktisi</span>
+                                        @elseif ($kegiatan->level == 'Dosen')
                                         <span
-                                            class="badge bg-light text-secondary border border-secondary">Kabupaten/Kota</span>
+                                            class="badge bg-light text-secondary border border-secondary">Dosen</span>
                                         @else
                                         {{ $kegiatan->level }}
                                         @endif

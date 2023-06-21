@@ -52,11 +52,11 @@
                             <select name="level" id="level" class="form-control" required>
                                 <option value="">-- Pilih Level --</option>
                                 <option value="Umum" {{ $kegiatan->level == 'Umum' ? 'selected' : '' }}>Umum</option>
-                                <option value="Provinsi" {{ $kegiatan->level == 'Provinsi' ? 'selected' : '' }}>
-                                    Provinsi</option>
-                                <option value="Kabupaten/Kota" {{ $kegiatan->level == 'Kabupaten/Kota' ? 'selected' : ''
+                                <option value="Praktisi" {{ $kegiatan->level == 'Praktisi' ? 'selected' : '' }}>
+                                    Praktisi</option>
+                                <option value="Dosen" {{ $kegiatan->level == 'Dosen' ? 'selected' : ''
                                     }}>
-                                    Kabupaten/Kota</option>
+                                    Dosen</option>
                             </select>
                         </div>
 
